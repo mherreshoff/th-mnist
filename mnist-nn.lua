@@ -6,7 +6,7 @@ function flattenImage(img)
 end
 
 function flattenInputIndicatorOutput(mnist_dataset)
-  dataset = {}
+  local dataset = {}
   function dataset:size() return mnist_dataset.size end
   for i = 1,mnist_dataset.size do
     local input = flattenImage(mnist_dataset.data[i])
